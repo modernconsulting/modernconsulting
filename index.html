@@ -1,7 +1,92 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modern consulting</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
 <body>
-<h1>Modern Consulting</h1>
+    <!-- Top Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">modern consulting</div>
+            <ul class="nav-links">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#offerings">Our Offerings</a></li>
+                <li><a href="#case-studies">Case Studies</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Innovating the Future, Together</h1>
+            <p>Your partner in tech-driven growth and unique solutions.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>At modern consulting, we believe in the power of innovation, freedom, technology, and uniqueness to drive success in the tech startup world. We partner with you to create tailored solutions that fit your unique needs.</p>
+    </section>
+
+    <!-- Offerings Section -->
+    <section id="offerings" class="offerings">
+        <h2>Our Offerings</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Technology Consulting</h3>
+                <p>We provide expert advice on technology adoption, infrastructure, and strategy, helping you stay ahead of the curve.</p>
+            </div>
+            <div class="service">
+                <h3>Innovation Workshops</h3>
+                <p>Our workshops are designed to spark creativity and out-of-the-box thinking, fostering innovation within your team.</p>
+            </div>
+            <div class="service">
+                <h3>Startup Mentorship</h3>
+                <p>We offer guidance and mentorship tailored specifically to tech startups, ensuring your business is poised for growth.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section id="case-studies" class="case-studies">
+        <h2>Case Studies</h2>
+        <p>Explore how we’ve helped other tech startups achieve their goals with innovative solutions.</p>
+        <!-- Add case studies content here -->
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 modern consulting. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
+
