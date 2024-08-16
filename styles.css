@@ -1,3 +1,5 @@
+/* DO NOT REWRITE THIS IT IS NOT MAINTAINABLE OR OK FOR UR MENTAL THEA/RTH */
+
 /* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
@@ -183,12 +185,21 @@ footer {
     color: #333; /* Dark text for contrast */
     padding: 60px 20px;
 }
+section h2 {
+    font-size: 96px;
+    font-weight: 900;
+}
 
 /* Contact Section - Dark Background with Diagonal Lines */
 .contact {
     background-color: #247321;
     color: white; /* Light text for contrast */
     padding: 60px 20px;
+}
+
+.down-arrow {
+    display: none;
+    font-size: 108px;
 }
 
 /* Mobile Responsiveness */
@@ -231,6 +242,9 @@ footer {
 
     .service {
         width: 100%;
+    }
+    .down-arrow {
+        display: inline;
     }
 }
 
@@ -307,3 +321,26 @@ section {
     clip-path: polygon(0 0, 100% 100%, 0 100%);
     z-index: 1;
 }
+a {
+    color: #ddd;
+}
+
+.hero-content {
+    animation: fadeInAnimation ease 0.6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+sup a {
+    color: #222;
+}
+
+
