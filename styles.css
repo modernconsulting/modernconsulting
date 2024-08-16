@@ -7,6 +7,10 @@ body {
     color: #333;
 }
 
+header {
+    width: 100%;
+}
+
 /* Top Navigation Bar */
 .navbar {
     background-color: #247321; /* Forest green */
@@ -17,8 +21,9 @@ body {
     padding: 15px 20px;
     position: fixed;
     top: 0;
-    width: auto;
     z-index: 1000;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .logo {
@@ -63,6 +68,17 @@ body {
     color: white;
     text-align: center;
     padding: 100px 20px;
+    position: relative; /* Required for overlay positioning */
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+    padding: 40px 20px;
+    border-radius: 8px;
+    display: inline-block;
+    max-width: 80%; /* Limit width for better readability */
+    margin: 0 auto;
+    border-radius: 12px;
 }
 
 .hero-content h1 {
@@ -97,6 +113,7 @@ section {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 30%;
+    box-sizing: border-box;
 }
 
 .service h3 {
@@ -144,6 +161,36 @@ footer {
     padding: 20px 0;
 }
 
+/* About Section - Light Background with Diagonal Lines */
+.about {
+    background-color: #247321;
+    text-align: center;
+    color: #333; /* Dark text for contrast */
+    padding: 60px 20px;
+}
+
+/* Offerings Section - Dark Background with Diagonal Lines */
+.offerings {
+    background-color: white;
+    color: white; /* Light text for contrast */
+    padding: 60px 20px;
+}
+
+/* Case Studies Section - Light Background with Diagonal Lines */
+.case-studies {
+    background-color: white;
+    text-align: center;
+    color: #333; /* Dark text for contrast */
+    padding: 60px 20px;
+}
+
+/* Contact Section - Dark Background with Diagonal Lines */
+.contact {
+    background-color: #247321;
+    color: white; /* Light text for contrast */
+    padding: 60px 20px;
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .navbar .nav-links {
@@ -174,6 +221,10 @@ footer {
         font-size: 18px;
     }
 
+    .hero-content {
+        padding: 20px 15px; /* Adjust padding for smaller screens */
+    }
+
     .offerings .services {
         flex-direction: column;
     }
@@ -183,3 +234,65 @@ footer {
     }
 }
 
+/* General Section Styling */
+section {
+    position: relative;
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
+}
+
+/* About Section - Light Background */
+.about {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.about::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #2c5f2d; /* Matches the next section's background */
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+
+/* Offerings Section - Dark Background with Diagonal Line */
+.offerings {
+    background-color: #2c5f2d; /* Dark forest green */
+}
+
+.offerings::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #ffffff; /* Matches the next section's background */
+    clip-path: polygon(0 0, 0 100%, 100% 100%);
+}
+
+/* Case Studies Section - Light Background */
+.case-studies {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.case-studies::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #2c5f2d; /* Matches the next section's background */
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+
+/* Contact Section - Dark Background with Diagonal Line */
+.contact {
+    background-color: #2c5f2d; /* Dark forest green */
+}
