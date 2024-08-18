@@ -349,3 +349,7 @@ sup a {
 body, html {
     overflow-x: hidden;
 }
+
+.offerings h2 {
+    color: white;
+}
