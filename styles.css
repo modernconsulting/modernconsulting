@@ -174,7 +174,7 @@ footer {
 /* Offerings Section - Dark Background with Diagonal Lines */
 .offerings {
     background-color: white;
-    color: white; /* Light text for contrast */
+    color: black; /* Light text for contrast */
     padding: 60px 20px;
 }
 
