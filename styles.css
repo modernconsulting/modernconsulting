@@ -246,6 +246,9 @@ section h2 {
     .down-arrow {
         display: inline;
     }
+    section h1 {
+        font-size: 72px;
+    }
 }
 
 /* General Section Styling */
@@ -343,4 +346,6 @@ sup a {
     color: #222;
 }
 
-
+body, html {
+    overflow-x: hidden;
+}
